@@ -1,4 +1,3 @@
-
 def main():
   prompt= input().strip(" ")
   x = prompt.split(",")
@@ -13,8 +12,11 @@ def main():
       nd.append(u)
     else:
       rd.append(u)
-  print(f" Len (5-9) {len(st)}")
-  print(f" Len (10-14) {len(nd)}")
-  print(f" Len (15-19) {len(rd)}")
-  print(f"(5-9)  :{st}",f"(10-14) :{nd}",f"(15-19) :{rd}",sep="\n")
+  print("Total number of Elements", len(i))
+  print("Lowest number :", min(i))
+  print("Highest number:", max(i))
+  print(f" Frequency of (5-9) = {len(st)}")
+  print(f" Frequency of (10-14) = {len(nd)}")
+  print(f" Frequency of (15-19) = {len(rd)}")
+  print(f"(5-9)   :{st}",f"(10-14) :{nd}",f"(15-19) :{rd}",sep="\n")
 main()
